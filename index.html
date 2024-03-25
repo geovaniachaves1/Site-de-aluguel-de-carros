@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aluguel de Veículos</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/LOGO.png" alt="Logo-roda">
+        <nav>
+            <ul>
+                <li><a href="#aluguel">ALUGUEL</a></li>
+                <li><a href="#assinatura">CARRO POR ASSINATURA</a></li>
+                <li><a href="#frotas">FROTAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="dashboard">
+        <h1 class="page-title">Aluguel de <span class="page-title__emphasis">Carros</span></h1>
+        <h2>"Aluguel: a solução para suas necessidades temporárias."</h2>
+    </section>
+    
+    <main class="container">
+        <section id="carros" class="vehicle-section">
+            <div class="vehicle">
+                <img src="./img/carro-gol.jpg" alt="Carro-Gol">
+                <div class="vehicle-details">
+                    <h2>Volkswagen GOL</h2>
+                    <button id="alugar1" onclick="alugar(1)">Alugar</button>
+                    <button id="devolver1" onclick="devolver(1)" style="display: none;">Devolver</button>
+                    <span id="status1">Disponível para Aluguel</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="carros" class="vehicle-section">
+            <div class="vehicle">
+                <img src="./img/carro-onix.jpg" alt="Carro-onix">
+                <div class="vehicle-details">
+                    <h2>Chevrolet ONIX</h2>
+                    <button id="alugar2" onclick="alugar(2)">Alugar</button>
+                    <button id="devolver2" onclick="devolver(2)" style="display: none;">Devolver</button>
+                    <span id="status2">Disponível para Aluguel</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="carros" class="vehicle-section">
+            <div class="vehicle">
+                <img src="./img/carro hb20.jpg" alt="Hyundai HB20">
+                <div class="vehicle-details">
+                    <h2>Hyundai HB20</h2>
+                    <button id="alugar3" onclick="alugar(3)">Alugar</button>
+                    <button id="devolver3" onclick="devolver(3)" style="display: none;">Devolver</button>
+                    <span id="status3">Disponível para Aluguel</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Aluguel de Veículos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

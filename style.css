@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-image: url(./img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #000;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header menu {
+    display: flex;
+    gap: 16px; /* Reduzindo o espaço entre os itens do menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 12px; /* Reduzindo a margem entre os itens do menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E20100;
+    font-size: 18px; /* Reduzindo o tamanho da fonte do menu */
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 6vw; /* Ajustando o tamanho da fonte para telas menores */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.page-title__emphasis {
+    color: #E20100;
+}
+
+h2 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 3vw; /* Ajustando o tamanho da fonte para telas menores */
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin-bottom: 0.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vehicle-section {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px; /* Reduzindo o tamanho da fonte para telas menores */
+    justify-items: center;
+    text-align: center;
+}
+
+.vehicle {
+    background-color: #ffffff80;
+    border-radius: 0 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    border: center;
+    padding: 2vw;
+    margin-bottom: 4vw;
+}
+
+.vehicle img {
+    width: 100%;
+    max-width: 300px; /* Reduzindo o tamanho máximo da imagem para telas menores */
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+}
+
+.vehicle-details {
+    padding: 2vw 0;
+    margin-bottom: 0.5vw;
+}
+
+.vehicle-details h2 {
+    margin-bottom: 20px; /* Ajustando o espaçamento para telas menores */
+    font-size: 20px; /* Reduzindo o tamanho da fonte para telas menores */
+    color: #000000;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #dd1414;
+    color: #fff;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px; /* Reduzindo o tamanho da fonte para telas menores */
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(136, 95, 50, 0.25); /* Corrigido espaço em excesso */
+    margin-left: 2rem; /* Reduzindo a margem para telas menores */
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background-color: #000000;
+    padding: 8px 16px; /* Ajustando o padding para telas menores */
+    font-size: 14px; /* Reduzindo o tamanho da fonte para telas menores */
+}
+
+footer {
+    background-color: #000;
+    color: #E20100;
+    text-align: center;
+    padding: 10px;
+    margin-top: px; /* Corrigindo erro de digitação */
+    padding-top: 20px;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-size: 16px; /* Reduzindo o tamanho da fonte para telas menores */
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .vehicle {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 12px; /* Ajustando o padding para telas menores */
+        font-size: 14px; /* Reduzindo o tamanho da fonte para telas menores */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 8vw; /* Ajustando o tamanho da fonte para telas ainda menores */
+    }
+
+    h2 {
+        font-size: 4vw; /* Ajustando o tamanho da fonte para telas ainda menores */
+    }
+
+    .vehicle img {
+        max-width:150px; /* Reduzindo o tamanho máximo da imagem para telas ainda menores */
+    }
+
+    .vehicle-details h2 {
+        font-size: 18px; /* Reduzindo o tamanho da fonte para telas ainda menores */
+    }
+
+    button {
+        margin-left: 1rem; /* Reduzindo ainda mais a margem para telas ainda menores */
+    }
+
+    button:hover {
+        padding: 6px 12px; /* Ajustando o padding para telas ainda menores */
+        font-size: 12px; /* Reduzindo o tamanho da fonte para telas ainda menores */
+    }
+}
+
+ @media screen and (max-width: 500px);
